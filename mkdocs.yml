@@ -1,0 +1,52 @@
+site_name: I2C AXI Lite Core
+nav:
+    - Home: index.md
+    - Protocol: 
+        - Introduction: protocol/protocol.md
+        - I2C: protocol/i2c.md
+        - AXI Lite: protocol/axi-lite.md
+    - Hardware: hardware.md
+    - Software: 
+        - Introduction: software/software.md
+        - Fusesoc: software/fusesoc.md
+        - Bare Metal: software/bare-metal.md
+        - Linux: software/linux.md
+    - Example: example.md
+    - Notes: notes.md
+    - References: references.md
+
+repo_name: warclab/i2c-axil-core
+repo_url: https://github.com/warclab/i2c-axil-core
+    
+theme:
+    name: material
+    palette:
+        primary: 'deep purple'
+        accent: 'purple'
+    icon: 
+        logo: fontawesome/solid/microchip
+        repo: fontawesome/brands/github
+    favicon: assets/images/microchip.svg
+
+markdown_extensions:
+    - admonition
+    - toc:
+        permalink: true
+
+plugins:
+    - markdownwavedrom
+    - search
+    - img2fig
+    - bibtex:
+        bib_file: "refs.bib"
+        cite_style: "pandoc"
+        
+
+extra_javascript:
+    - assets/js/wavedrom.js
+    - assets/js/default.js
+
+extra_css:
+    - assets/css/center.css
+#     - resources/dark_theme.css
+#     - resources/codehilite.css

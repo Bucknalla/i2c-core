@@ -1,0 +1,3 @@
+mkdocs-wavedrom-plugin
+mkdocs-material
+mkdocs-img2fig-plugin

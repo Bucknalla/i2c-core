@@ -1,0 +1,28 @@
+CAPI=2:
+name : warc:protocols:i2c:0.0.1
+filesets:
+  rtl:
+    files:
+      - rtl/i2c_master.v
+      - rtl/i2c_defines.v: {is_include_file : true}
+    file_type : verilogSource
+
+  tb:
+    files:
+      - tb/tb_top.v
+      - tb/tb_i2c_slave.v
+    file_type : verilogSource
+
+targets:
+  default:
+    filesets : [rtl]
+  sim:
+    default_tool : icarus
+    filesets : [rtl, tb]
+    toplevel : [tb_top]
+
+provider:
+  name : github
+  user : warc
+  repo : i2c
+  version : v0.0.1
